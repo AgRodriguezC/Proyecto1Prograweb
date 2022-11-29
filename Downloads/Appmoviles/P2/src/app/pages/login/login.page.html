@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-title class="ion-text-center" color="warning">
+      <ion-label>
+        
+        <img class="tarLogo" src="../../../assets/img/logo.png" alt="">
+        <h1 class="ion-margin">Bienvenido Amigo/a</h1>
+      </ion-label>
+    </ion-card-title>
+    <form [formGroup]="credentials" (ngSubmit)="login()">
+      <ion-item class="ion-margin">
+        <ion-input type="email" placeholder="Correo Electrónico" formControlName="email"></ion-input>
+        <ion-note slot="error" *ngIf="(email?.dirty || email?.touched) && email?.errors">Email no válido</ion-note>
+      </ion-item>
+  
+      <ion-item class="ion-margin">
+        <ion-input type="password" placeholder="Contraseña" formControlName="password"></ion-input>
+        <ion-note slot="error" *ngIf="(password?.dirty || password?.touched) && password?.errors">Password debe tener al menos 6 caracteres</ion-note>
+      </ion-item >
+      
+      <ion-button expand="full" shape="block" type="submit" [disabled]="!credentials.valid">Iniciar Sesión</ion-button>
+      <ion-button expand="full" type="button" (click)="register()">Registrarse</ion-button>
+      <!--<ion-button expand="full" type="button" (click)="register()">Registrarse</ion-button> -->
+    </form>
+  </ion-card>
+  
+
+</ion-content>

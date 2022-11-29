@@ -1,0 +1,65 @@
+  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+  <ion-content [fullscreen]="true">
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>La temperatura de hoy</ion-card-title>
+        <ion-card-subtitle><clima-service  class="tamaño"></clima-service></ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col routerLink="/viajar">
+        <ion-card >
+          <img class="tarLogo redondeo" src="../../../assets/img/HomeImage.png"  alt="">
+
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col routerLink="/conversor">
+        <ion-card>
+          <img class=" redondeo" src="../../../assets/img/Fconversor.png" alt="">
+          
+        </ion-card>
+
+      </ion-col>
+      <ion-col routerLink="/about">
+        <ion-card>
+          <img class=" redondeo" src="../../../assets/img/Nosotros.png " alt="">
+          
+          
+        </ion-card>
+      </ion-col>
+
+
+    </ion-row>
+    <ion-row>
+      <ion-col routerLink="/viajar">
+        <ion-card>
+          <img class=" redondeo" src="../../../assets/img/FotoCard1.png" alt="">
+
+
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+       
+      <ion-button expand="full" (click)="logout()">Cerrar Sesión</ion-button>
+    
+  
+  </ion-grid>
+  
+    
+
+</ion-content>
