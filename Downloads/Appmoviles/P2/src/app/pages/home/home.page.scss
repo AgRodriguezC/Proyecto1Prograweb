@@ -1,0 +1,31 @@
+.tarLogo{
+    width: 20em;
+    height: 12.5em;
+    
+}
+.redondeo
+{
+    border-radius: 0.5em;
+    position: relative;
+}
+.tamaño{
+    font-size:large;
+}
+
+ion-card {
+    --background: #000;
+    --color: #9efff0;
+  }
+  
+  ion-card-title {
+    --color: #52ffe4;
+  }
+  
+  ion-card-subtitle {
+    --color: #d1fff8;
+  }
+ 
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
